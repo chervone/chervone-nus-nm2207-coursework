@@ -1,0 +1,38 @@
+html {
+    height: 100%
+}
+
+body {
+    background-color: pink;
+    margin:0%;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "menu content"
+        ;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing:border-box;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu;
+}
+
+div {
+    grid-area: content;
+}
+
+header, nav, div {
+    background-color: white;
+    margin: 3.5px;
+    border-radius: 5px;
+    padding: 10px;
+}
